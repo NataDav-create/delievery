@@ -1,0 +1,114 @@
+.delievery-goods {
+  padding: 100px 0;
+  // background-image: url('../img/delievery-goods/truck-bg.png');
+  // background-repeat: no-repeat;
+  // background-position: center right;
+  // background-size: contain;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__col {
+    &--60 {
+      flex-basis: 60%;
+    }
+
+    &--40 {
+      flex-basis: 40%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    max-width: 670px;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 26px;
+    padding-left: 26px;
+    margin-bottom: 15px;
+    width: 214px;
+    height: 186px;
+    background-color: $dark;
+  }
+
+  &__descr {
+    margin-top: 15px;
+    max-width: 127px;
+    font-family: 'Proxima-Nova-Bold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__offer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-img {
+      width: 150px;
+      height: 170px;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-heading {
+      max-width: 146px;
+      font-family: 'Proxima-Nova-Bold';
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    &-desc {
+      max-width: 223px;
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 18px;
+      opacity: 0.8;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+
+    &-btn__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+}
+
+.delievery-slider {
+  width: 40%;
+  min-height: 720px;
+
+  &__item {
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 720px;
+  }
+}
