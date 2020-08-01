@@ -1,9 +1,75 @@
 .delievery-goods {
+  position: relative;
   padding: 100px 0;
+
   // background-image: url('../img/delievery-goods/truck-bg.png');
   // background-repeat: no-repeat;
   // background-position: center right;
   // background-size: contain;
+  &__switch-wrapper {
+    position: relative;
+    padding-left: 0px;
+    z-index: 100;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      ;
+    }
+  }
+
+  &__switch-title {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 27px;
+    opacity: 0.4;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: -3.5px;
+      top: 15%;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #4D4859;
+    }
+
+    &.active {
+      opacity: 1;
+
+      &::before {
+        background-color: #FFC582;
+      }
+
+      .delievery-goods__switch-text {
+        display: block;
+      }
+    }
+  }
+
+  &__switch-text {
+    display: none;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    max-width: 217px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.63);
+
+    // &.active {
+    //   display: block;
+    // }
+  }
 
   &__row {
     display: flex;
@@ -18,6 +84,7 @@
 
     &--40 {
       flex-basis: 40%;
+      padding-left: 50px;
     }
   }
 
@@ -30,7 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
   }
 
   &__item {
@@ -102,13 +169,58 @@
 }
 
 .delievery-slider {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 40%;
   min-height: 720px;
 
   &__item {
-    background-position: top right;
+    background-position: top -100px right;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 720px;
+    min-height: 830px;
+  }
+}
+
+.slick-btn {
+  bottom: 100px;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: transparent;
+  outline: none;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.slick-prev {
+  left: -730px;
+
+  &:hover {
+    img {
+      background-image: none;
+      background-image: url('../img/delievery-goods/arrow-lefthover.svg');
+    }
+  }
+
+  img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s;
+  }
+}
+
+.slick-next {
+  left: -670px;
+
+  &:hover {
+    img {
+      background-image: none;
+      background-image: url('../img/delievery-goods/arrow-righthover.svg');
+    }
   }
 }
