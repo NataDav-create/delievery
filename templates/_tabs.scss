@@ -1,0 +1,69 @@
+.tab-item {
+  display: none;
+
+  &.active-tab {
+    display: block;
+  }
+
+  &__heading {
+    max-width: 500px;
+    margin-bottom: 45px;
+    font-family: 'Proxima-Nova-Bold';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  &__subt {
+    font-size: 20px;
+    line-height: 41px;
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('/img/form/form-price-bg.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+  }
+}
+
+.tab_content {
+  background-color: #3C374B;
+  border-radius: 0px 5px 5px 5px;
+  border-top: none;
+  padding: 45px 50px;
+
+  // &--active {
+  //   display: block;
+  // }
+}
+
+.tabs {
+  display: flex;
+  text-align: center;
+}
+
+.tab {
+  max-width: 224px;
+  width: 100%;
+  height: 83px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 5px 5px 0px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  padding: 20px 0;
+  cursor: pointer;
+
+  &.active {
+    display: block;
+    background: #3C374B;
+    // box-shadow: 10px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 5px 5px 0px 0px;
+    opacity: 1;
+  }
+}

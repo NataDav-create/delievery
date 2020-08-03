@@ -26,5 +26,15 @@ $(function () {
     $(this).addClass("active");
   }));
 
+  $('.route__tabs .tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.route__tabs').find('.tab-item').removeClass('active-tab').hide();
+    $('.route__tabs .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id).addClass('active-tab').fadeIn();
+    // $($(this).attr("href")).addClass("tab_content--active");
+    return false;
+  });
+
 
 });

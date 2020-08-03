@@ -1,0 +1,21 @@
+.route {
+  padding: 100px 0;
+  background-color: $dark;
+  background-image: url('../img/form/form-bg.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top 100px right;
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__tabs {
+    margin-top: 80px;
+  }
+}
+
+.form__wrapper {
+  width: 1170px;
+  height: 850px;
+}

@@ -422,8 +422,162 @@
 
   <section class="route">
     <div class="container">
-      
+      <h2 class="page-title services__title route__title">Предложим оптимальный<br> маршрут <span
+          class="page-span__descr">и
+          рассчитаем
+          стоимость за <span class="page-span__descr--red">10 минут</span></span>
+      </h2>
+      <span class="services__subtitle">Сэкономьте свое время на поиске компании, машины, оформления документов и
+        контроле доставки</span>
+      <div class="route__tabs">
+        <div class="tabs">
+          <span class="tab active" data-id="1">Заполните форму</span>
+          <span class="tab" data-id="2">Расчет стоимости<br> и сроков</span>
+        </div>
+        <div class="tab_content">
+          <div class="tab-item active-tab" id="1">
+            <form action="" class="route-form">
+              <div class="input-group__wrapper">
+                <div class="input-group">
+                  <span>01</span>
+                  <label class="tabs__label" for="">Укажите пункт отправки и назначения груза</label>
+                  <div class="select__inner">
+                    <div class="select__wrapper">
+                      <img src="img/form/icon1.svg" alt="" class="select__wrapper-img">
+                      <select id="citySelect" class="selector">
+                        <option value="" selected="selected">Откуда,
+                          например Москва
+                        </option>
+                        <option value="cityMoscow">Moscow</option>
+                        <option value="citySaint">Saint-Petersburg</option>
+                        <option value="cityMagnitogorsk">Magnitogorsk</option>
+                      </select>
+                    </div>
+                    <div class="select__wrapper">
+                      <img src="img/form/icon1.svg" alt="" class="select__wrapper-img">
+                      <select id="citySelect" class="selector">
+                        <option value="" selected="selected">Куда, например Италия
+                        </option>
+                        <option value="cityMoscow">Moscow</option>
+                        <option value="citySaint">Saint-Petersburg</option>
+                        <option value="cityMagnitogorsk">Magnitogorsk</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <div class="input-group__inner">
+                    <div class="form__content">
+                      <span>02</span>
+                      <label class="tabs__label tabs__label--textarea" for="">Опишите груз</label>
+                      <span class="form__span">Укажите тип, габариты, по желанию можете прикрепить фото или схему
+                        груза</span>
+                    </div>
+                    <div class="textarea__wrapper"><textarea class="tabs__textarea" name="" id=""
+                        placeholder="Например, бульдозер 25 тонн"></textarea></div>
+                  </div>
+
+                </div>
+                <div class="input-group">
+                  <div class="input-group__inner">
+                    <div class="form__content">
+                      <span>03</span>
+                      <label class="tabs__label tabs__label--textarea" for="">Комментарий или вопрос</label>
+                      <span class="form__span">Не обязательное поле</span>
+                    </div>
+                    <div class="textarea__wrapper"><textarea class="tabs__textarea" name="" id=""
+                        placeholder="Например, сроки доставки?"></textarea></div>
+                  </div>
+
+                </div>
+                <button class="btn call__inner-btn btn--shadow">Рассчитать стоимость</button>
+              </div>
+              <div class="route-form__content">
+                <h4 class="route-form__content-title">
+                  С расчётом вы получите
+                </h4>
+                <p class="route-form__content-text route-form__content-text--1">
+                  Консультацию по перевозкам, советы, предложения, решения профессионала,<span>а не скрипт
+                    продажи от
+                    менеджера</span>
+                </p>
+                <p class="route-form__content-text route-form__content-text--2">
+                  Скидку 20-40% <span>на первый заказ</span>
+                </p>
+                <p class="route-form__content-text route-form__content-text--3">
+                  Отзывы клиентов <span>и контакты для связи</span>
+                </p>
+                <p class="route-form__content-text route-form__content-text--4">
+                  <span>Доступ к </span>бонусной программе
+                </p>
+
+              </div>
+            </form>
+          </div>
+          <div class="tab-item" id="2">
+
+            <div class="tab-item__inner">
+              <form action="" class="form form-price">
+                <h3 class="tab-item__heading">
+                  Менеджер получил ваши данные и производит рассчёт
+                </h3>
+                <h4 class="tab-item__subt">Куда вам отправить расчёт?</h4>
+                <div class="form-btn__wrapper">
+                  <button class="btn menu-btn btn--shadow">Телефон</button>
+                  <button class="btn menu-btn btn--white btn--white--viber">Viber</button>
+                  <button class="btn menu-btn btn--white btn--white--watsapp">WhatsApp</button>
+                  <button class="btn menu-btn btn--white btn--white--telegram">Telegram</button>
+                </div>
+                <div class="input-group__wrapper">
+                  <label for="" class="label form-price__label">
+                    Введите ваш номер:
+                  </label>
+                  <div class="form-price__input-wrapper">
+                    <input type="text" class="input form-price__input" placeholder="Your phone">
+                  </div>
+                </div>
+                <div class="form-price__btn-wrapper">
+                  <button class="btn call__inner-btn btn--shadow">Рассчитать стоимость</button>
+                  <p class="form-price__descr">Вам не будут поступать надоедливые звонки и принуждение к заказу. Расчет
+                    не
+                    обязывает заказывать услугу</p>
+                </div>
+
+              </form>
+              <div class="route-form__content">
+                <h4 class="route-form__content-title">
+                  С расчётом вы получите
+                </h4>
+                <p class="route-form__content-text route-form__content-text--1">
+                  Консультацию по перевозкам, советы, предложения, решения профессионала,<span>а не скрипт
+                    продажи от
+                    менеджера</span>
+                </p>
+                <p class="route-form__content-text route-form__content-text--2">
+                  Скидку 20-40% <span>на первый заказ</span>
+                </p>
+                <p class="route-form__content-text route-form__content-text--3">
+                  Отзывы клиентов <span>и контакты для связи</span>
+                </p>
+                <p class="route-form__content-text route-form__content-text--4">
+                  <span>Доступ к </span>бонусной программе
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <button class="btn menu-btn">Оставить заявку<img src="./img/header/arrow-down.svg"></button> -->
+      </div>
     </div>
+    </div>
+
+    </div>
+  </section>
+
+  <section class="audit">
+    <div class="container"></div>
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
