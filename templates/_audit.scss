@@ -1,0 +1,48 @@
+.audit {
+  padding: 100px 0;
+  background-image: url('/img/form/audit-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+
+  &__title {
+    max-width: 650px;
+    margin-bottom: 35px;
+  }
+
+  &-list__wrapper {
+    padding: 30px 45px;
+    margin-bottom: 30px;
+    max-width: 430px;
+    min-height: 199px;
+    background-color: #302C3D;
+    border-radius: 5px;
+  }
+
+  &__link {
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #FFC582;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background-color: #FFC582;
+      border-radius: 50px;
+    }
+  }
+
+  &__text {
+    max-width: 430px;
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

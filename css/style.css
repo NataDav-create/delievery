@@ -1649,4 +1649,54 @@ h1 .infinity-span::before {
   border-radius: 5px 5px 0px 0px;
   opacity: 1;
 }
+
+.audit {
+  padding: 100px 0;
+  background-image: url("/img/form/audit-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+}
+
+.audit__title {
+  max-width: 650px;
+  margin-bottom: 35px;
+}
+
+.audit-list__wrapper {
+  padding: 30px 45px;
+  margin-bottom: 30px;
+  max-width: 430px;
+  min-height: 199px;
+  background-color: #302C3D;
+  border-radius: 5px;
+}
+
+.audit__link {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 50px;
+  color: #FFC582;
+}
+
+.audit__link::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #FFC582;
+  border-radius: 50px;
+}
+
+.audit__text {
+  max-width: 430px;
+  margin-bottom: 55px;
+  font-size: 16px;
+  line-height: 30px;
+}
 /*# sourceMappingURL=style.css.map */
